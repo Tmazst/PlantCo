@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <style>
+        .form-fields{
+            display:flex;
+            flex-direction:column;
+        }
+        section{ background-image:url(static/images/bg_service.png) }
+    </style>
+
+<div class="container">
+  <div class="banner">
+
+    <!-- Slides -->
+    
+
+    <div class="slide fade">
+      <img class="slide-img" src="static/images/495248695_122106388412854511_3543073993007548854_n.jpg" alt="Slide 1">
+      <div class="overlay"></div>
+      <div class="banner-text">Welcome to Our Website</div>
+    </div>
+
+    <div class="slide fade">
+      <img class="slide-img" src="static/images/500203428_122114291186854511_6973004770895506291_n.jpg" alt="Slide 2">
+      <div class="overlay"></div>
+      <div class="banner-text">Professional Services for You</div>
+    </div>
+
+    <div class="slide fade">
+      <img class="slide-img" src="static/images/496068567_122106388592854511_4510510937001894578_n.jpg" alt="Slide 3">
+      <div class="overlay"></div>
+      <div class="banner-text">Grow With Us</div>
+    </div>
+
+    <div class="slide fade">
+      <img class="slide-img" src="static/images/500342596_122114290562854511_6054792203013186068_n.jpg" alt="Slide 3">
+      <div class="overlay"></div>
+      <div class="banner-text">Grow With Us</div>
+    </div>
+
+     <div class="slide fade">
+      <img class="slide-img" src="static/images/518257489_122126637188854511_5724311902695663176_n.jpg" alt="Slide 3">
+      <div class="overlay"></div>
+      <div class="banner-text">Grow With Us</div>
+    </div>
+
+    <!-- Tracking dots -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+  </div>
+
+
+  <div class="about-info gen-flex-col">
+    <div class="logo-name gen-flex">
+         <img src="static/images/plantco_logo_standard.png" class="logo-image" alt="logo" />
+         <div class="name">PLANT CO. PTY LTD</div>
+         
+    </div>
+    <p>Formerly known as Emfuleni Lifestyle, we have grown into a destination where nature and community meet. Our vibrant Plant Shop and Nursery are filled with diverse greenery, while our cozy Café invites you to relax and reconnect with the tranquility of nature.</p>
+    <!-- <h1>Our Services</h1> -->
+  </div>
+  <div id="service-1" class="services gen-flex">
+    <div class="service-content gen-flex-col">
+      <div class="serv-title name"><i class="fa-solid fa-seedling"></i>  Plant Shop and Nursery</div>
+      <p>Where a delightful array of plants awaits to inspire and enrich your green space</p>
+    </div>
+    <!-- <div class="image-gal-cont">
+      <img src="static/images/502617861_122115392420854511_2704426019414818185_n.jpg" />
+      <img src="static/images/500120076_122114290190854511_8025995509442826810_n.jpg" />
+      <img src="static/images/500765103_122114290286854511_7596797710457330902_n.jpg" />
+      <img src="static/images/500687682_122114291168854511_5522493670016022523_n.jpg" />
+    </div> -->
+        <div class="image-gal-cont">
+        <div class="services-image-slide-l">
+          <div class="img-wrap">
+            <img src="static/images/502617861_122115392420854511_2704426019414818185_n.jpg" />
+            <div class="ser-overlay ">
+              <h1>Flower</h1>
+              <hr>
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="static/images/500120076_122114290190854511_8025995509442826810_n.jpg" />
+            <div class="ser-overlay ">
+              <h1>Flower</h1>
+              <hr>
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="static/images/500765103_122114290286854511_7596797710457330902_n.jpg" />
+            <div class="ser-overlay ">
+              <h1>Flower</h1>
+              <hr >
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="static/images/500687682_122114291168854511_5522493670016022523_n.jpg" />
+            <div class="ser-overlayl">
+              <h1>Flower</h1>
+              <hr>
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div id="service-2" class="services gen-flex">
+
+    <div class="image-gal-cont">
+        <div class="services-image-slide-r">
+          <div class="img-wrap">
+            <img src="static/images/518960900_122126637272854511_7276216790612137756_n.jpg" />
+            <div class="ser-overlay ">
+              <h1>Red Cake</h1>
+              <hr>
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="static/images/526839693_122129535794859349_4850462313180133027_n.jpg" />
+            <div class="ser-overlay ">
+              <h1>Red Cake</h1>
+              <hr>
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="static/images/526636750_122129535890859349_5709320021507481046_n.jpg" />
+            <div class="ser-overlay ">
+              <h1>Red Cake</h1>
+              <hr >
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="static/images/526297251_122129535596859349_6754661893048559649_n.jpg" />
+            <div class="ser-overlayl">
+              <h1>Red Cake</h1>
+              <hr>
+              <p>Fourth Image Caption Delicious cake delicious delicate</p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    <div class="service-content gen-flex-col">
+      <div class="serv-title name"><i data-lucide="coffee"></i>Cafe</div>
+      <p>Unwind in our cozy Cafe surrounded by nature's tranquility</p>
+    </div>
+
+  </div>
+  <!-- Landscaping  -->
+  <div id="service-3" class="services gen-flex-col">
+
+    <div class="service-content gen-flex-col">
+      <div class="serv-title name"><i class="fa-solid fa-trowel"></i> Landscaping, Land Rehabilitation, and Erosion Control</div>
+      <p>We are shaping beautiful spaces while restoring the earth and building sustainable environments that thrive.</p>
+    </div>
+
+    <div class="landscaping-img-cont">
+      
+      <a href="https://www.freepik.com/free-photo/beautiful-landscapes-iceland-while-travelling_18992979.htm#fromView=keyword&page=2&position=46&uuid=a09ef95b-0c08-4402-8659-3755dc4de7eb&query=Land+Rehabilitation">Image by freepik</a>
+        
+    </div>
+
+    <img class="bg-image" src="static/images/beautiful-landscapes-iceland-while-travelling.jpg" />
+  </div>
+  
+  <div style="height:300px;background-color:aliceblue"></div>
+
+
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls (if you add arrows later)
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+
+    // Auto slideshow
+    setInterval(() => {
+    slideIndex++;
+    showSlides(slideIndex);
+    }, 5000); // every 5 seconds
+
+const slideR = document.querySelector('.services-image-slide-r');
+const clone = slideR.cloneNode(true); 
+slideR.appendChild(clone);
+</script>
+{% endblock %}

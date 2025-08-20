@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>{{title}}</title>
+
+    <div class="physical_addr gen-flex">
+        <div class="gen-flex left-cont">
+          <a href="tel:+26878821279" class="gen-flex"><i data-lucide="phone"></i>+268 7882 1279</a>
+          <a href="wa.me:+26878821279"  class="gen-flex "><i class="fa-brands fa-whatsapp"></i>+268 7999 6925</a>
+        </div>
+        <div class="flex-grow"></div>
+        <div class="gen-flex right-cont">
+          <a href="https://www.facebook.com/profile.php?id=61575635356096" target="_blank"  class="gen-flex"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        
+    </div>
+
+    <!-- <nav class="nav">
+        <ul>
+            <li class="links-li" ><a href="/">Home</a></li>
+            <li class="links-li" ><a href="/#services">Services</a></li>
+            <li class="links-li"><a href="/">About</a></li>
+            <li class="links-li"><a href="/#contact_us">Contact Us</a></li>
+        </ul>
+    </nav> -->
+
+<!--    <button class="menu burger">Menu</button>-->
+    <div  onclick="openMenuFunc()" class="menu-icon">
+        <div class="stroke"></div>
+        <div class="stroke"></div>
+        <div class="stroke"></div>
+    </div>
+<div  id="side-navig-bg" class="side-nav-bg ">
+        <div style="height:100vh" id="side-navig-cont" class="side-nav-cont move-to-appear gen-flex-col">
+            <!-- <div class="close-btn"><div class="stroke"></div></div> -->
+             <br><br>
+            <div style="flex-direction: unset;" class="general-flex"><img style="height:70px" src="static/images/altersol_white.png" /><h3 style="color:white;text-align: left;"></h3></div>
+            <div style="display: flex;flex-wrap: wrap;height:100vh;position:relative">
+
+            <div class="nav-scroll">
+              <div style="align-self:;" id="float-nav" class="sidenav-list">
+                
+                  <div id="" class="saas-nav-item gen-flex">
+                    <a href="/"><span style="color:white">Home</span></a>
+                  </div>
+                  <div id="" class="saas-nav-item gen-flex">
+                    <a href="#"><span style="color:white">About</span></a>
+                  </div>
+                  <div id="" class="saas-nav-item gen-flex">
+                    <a href="#services"><span style="color:white">Services</span></a>
+                  </div>
+                   
+                  <div id="" class="saas-nav-item gen-flex">
+                    <a href="#contact-us-div"><span style="color:white">Contact</span></a>
+                  </div>
+                 
+                  <div id="" class="saas-nav-item gen-flex">
+                    <a href="#partners"><span style="color:white">Partners</span></a>
+                  </div>
+                  <div class="filler"></div>
+                  <div class="gen-flex-col lower-nav">
+                      
+                      <!-- <a href="#"><div class="gen-flex"><img style="height:30px" src="static/icons/about-icon.png" /><span class="labels">About</span></div></a>  -->
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div  class="close-btn"><img onclick="closeSideNavFunc()" style="height: 45px;" src="static/icons/tx-sales-trend-upwards-add-btn.png" /> </div>
+</div>
+
+  <script>
+        function sideNavFunc(event){
+            console.log("Side Nav");
+            let sideNavBg = document.querySelector('#side-navig-bg');
+            let sideNavCont = document.querySelector("#side-navig-cont");
+            sideNavBg.classList.toggle("show-popup");
+            sideNavCont.classList.toggle("show-menu");
+            };
+
+            function closeSideNavFunc(){
+            console.log("Side Nav1");
+            let sideNavBg = document.querySelector('#side-navig-bg');
+            let sideNavCont = document.querySelector("#side-navig-cont");
+
+                sideNavBg.classList.remove("show-popup");
+                sideNavCont.classList.remove("show-menu");
+
+         };
+    </script>
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="container">
+        {% block content %}
+        {%endblock%}
+    </div>
+
+    <script src="static/js_script.js" ></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+<script>
+  lucide.createIcons();
+</script>
+</html>
