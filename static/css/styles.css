@@ -558,6 +558,10 @@ button{
     /* transform: translateX(-20%); */
   }
 
+#service-3 .service-content{
+    width:90%
+}
+
  
 /* .services-image-slide-l .img-wrap {  flex: 0 0 auto; scroll-snap-align: center; } */
 
