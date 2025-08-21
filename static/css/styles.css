@@ -253,8 +253,13 @@ h1, h2, h3, h4, h5, h6 {
 .left-cont{
     flex-grow: 1;
     justify-content: flex-start;
-    gap:3%
+    gap:3%;
 }
+
+.left-cont a{
+    font-size: 0.8rem;
+}
+
 
 /* Body text clean in Open Sans */
 body, p, li, a, span, div {
