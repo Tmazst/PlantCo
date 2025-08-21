@@ -538,7 +538,7 @@ button{
     left:-30%;
     z-index: 10;
   }
-  
+
 .image-gal-cont{
     position: relative;
 }
@@ -560,13 +560,13 @@ button{
 
   .services-image-slide-l {
     display: flex;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     scroll-snap-type: x mandatory;
   }
   .services-image-slide-l .img-wrap {
-    flex: 0 0 90vw;
-    scroll-snap-align: center;
-  }
+    flex: 0 0 auto;   /* no forced width */
+    /* margin-right: 1rem; optional spacing */
+}
 
 }
 
