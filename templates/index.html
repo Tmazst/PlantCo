@@ -232,20 +232,28 @@ const clone = slideR.cloneNode(true);
 slideR.appendChild(clone);
 
 // if(window.innerWidth < 700){
-  const slider = document.querySelector(".services-image-slide-l");
-  let startX = 0;
-  let scrollLeft = 0;
+const slider = document.querySelector(".services-image-slide-l");
+let isDown = false;
+let startX;
+let scrollLeft;
 
-  slider.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].pageX;
-    scrollLeft = slider.scrollLeft;
-  });
+slider.addEventListener("touchstart", (e) => {
+  isDown = true;
+  startX = e.touches[0].clientX;
+  scrollLeft = slider.scrollLeft;
+}, { passive: true });
 
-  slider.addEventListener("touchmove", (e) => {
-    const x = e.touches[0].pageX;
-    const walk = (startX - x); 
-    slider.scrollLeft = scrollLeft + walk;
-  });
+slider.addEventListener("touchend", () => {
+  isDown = false;
+});
+
+slider.addEventListener("touchmove", (e) => {
+  if (!isDown) return;
+  e.preventDefault(); // stop page from scrolling vertically
+  const x = e.touches[0].clientX;
+  const walk = startX - x;
+  slider.scrollLeft = scrollLeft + walk;
+}, { passive: false });
 // }
 </script>
 {% endblock %}
