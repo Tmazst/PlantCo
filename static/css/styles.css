@@ -109,7 +109,6 @@ body{
 
 .image-gal-cont img{
     height:inherit;
-    
 }
 
 .img-wrap img {
@@ -518,6 +517,56 @@ button{
 .about-info p{
     width:85%
 }
+#service-1{
+    position: relative;
+}
+#service-1 .service-content {
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    width: 80vw;
+    background: rgb(190, 64, 64) !important; */
+    transition: transform 0.3s ease;
+    /* z-index: 10; */
+  }
+
+#service-1 .service-content.hidden {
+    /* transform: translateX(-80%); */
+    /* width:10%; */
+    position: absolute;
+    top:0;
+    left:-30%;
+    z-index: 10;
+  }
+  
+.image-gal-cont{
+    position: relative;
+}
+
+.toggle-content-btn {
+    position: absolute;
+    left:0;
+    top:100px;
+    display: block;
+    margin-bottom: 1rem;
+    transform: rotate(90deg);
+    z-index: 9;
+  }
+
+#service-1 .image-gal-cont.adjust{
+    width:100%;
+    /* transform: translateX(-20%); */
+  }
+
+  .services-image-slide-l {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .services-image-slide-l .img-wrap {
+    flex: 0 0 90vw;
+    scroll-snap-align: center;
+  }
 
 }
 

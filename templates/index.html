@@ -68,10 +68,11 @@
   </div>
   <div id="service-1" class="services gen-flex">
     <div class="service-content gen-flex-col">
+      
       <div class="serv-title name"><i class="fa-solid fa-seedling"></i>  Plant Shop and Nursery</div>
       <p>Where a delightful array of plants awaits to inspire and enrich your green space</p>
     </div>
-      <div class="image-gal-cont">
+      <div id="serv-img-cont" class="image-gal-cont">
         <div class="services-image-slide-l">
           <div class="img-wrap">
             <img src="static/images/502617861_122115392420854511_2704426019414818185_n.jpg" />
@@ -182,6 +183,12 @@
 </div>
 
 <script>
+    document.querySelector("#serv-img-cont")
+      .addEventListener("click", () => {
+        document.querySelector(".service-content").classList.toggle("hidden");
+        document.querySelector(".image-gal-cont").classList.toggle("adjust");
+      });
+
     let slideIndex = 1;
     showSlides(slideIndex);
 
