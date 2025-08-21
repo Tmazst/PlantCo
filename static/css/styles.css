@@ -558,13 +558,8 @@ button{
     /* transform: translateX(-20%); */
   }
 
-  .services-image-slide-l {
-    display: flex;
-    /* overflow-x: auto; */
-    scroll-snap-type: x mandatory;
-  }
  
-.services-image-slide-l .img-wrap {  flex: 0 0 auto; scroll-snap-align: center; }
+/* .services-image-slide-l .img-wrap {  flex: 0 0 auto; scroll-snap-align: center; } */
 
 
 }

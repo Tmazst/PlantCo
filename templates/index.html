@@ -230,5 +230,22 @@
 const slideR = document.querySelector('.services-image-slide-r');
 const clone = slideR.cloneNode(true); 
 slideR.appendChild(clone);
+
+if(window.innerWidth > 700){
+  const slider = document.querySelector(".services-image-slide-l");
+  let startX = 0;
+  let scrollLeft = 0;
+
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].pageX;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener("touchmove", (e) => {
+    const x = e.touches[0].pageX;
+    const walk = (startX - x); 
+    slider.scrollLeft = scrollLeft + walk;
+  });
+}
 </script>
 {% endblock %}
