@@ -231,7 +231,7 @@ const slideR = document.querySelector('.services-image-slide-r');
 const clone = slideR.cloneNode(true); 
 slideR.appendChild(clone);
 
-if(window.innerWidth > 700){
+if(window.innerWidth < 700){
   const slider = document.querySelector(".services-image-slide-l");
   let startX = 0;
   let scrollLeft = 0;
