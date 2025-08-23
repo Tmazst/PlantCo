@@ -467,6 +467,206 @@ button{
   background-color: #00be63; /* emerald green */
 }
 
+.btns-outline{
+    border-radius: 15px;
+    border:1px solid #c49602;
+    color: #c49602;
+    padding: 7px;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.btns-outline:hover{
+    border-radius: 15px;
+    background: #c49602;
+    padding: 6px;
+    color:white;
+    transition: all 0.3s ease;
+}
+
+.btns{
+    border-radius: 15px;
+    background: var(--pri-color);
+    padding: 7px;
+    color:white;
+    transition: all 0.3s ease;
+}
+
+.btns:hover{
+    border-radius: 15px;
+    border:1px solid #00be63;
+    color: #00be63;
+    padding: 7px;
+    background: none;
+}
+
+
+/* Portfolio  */
+/* General Layout */
+.portfolio-container {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(5px);
+  /* flex-wrap: wrap; */
+}
+
+.portfolio-items{
+    flex-wrap: wrap;
+    gap:20px;
+    /* align-items: stretch; */
+
+}
+
+
+
+.portfolio-description{
+  max-width: 700px;
+  font-size: 1.5rem;
+  color: var(--body-text-color);
+  border-top: 2px solid #f5d002;
+  padding: 10px;
+}
+
+.work-group{
+  width:100%;
+  gap:20px;
+  background: rgba(247, 247, 247,0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding:20px; */
+  max-width:500px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.work-item-thumb img{
+  width:100%;
+  border-bottom: 4px solid var(--pri-color);
+}
+
+.work-item-thumb h2{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,-50%);
+  bottom: 60px;
+  color: var(--pri-color);
+  backdrop-filter: blur(5px)  ;
+  width: 100%;
+  margin-bottom:15px ;
+}
+.modal-caption{
+  font-size: 1rem;
+  color: var(--body-text-color);
+  background-color: #bbb;
+  border-radius: 15px;
+  padding: 12px;
+  margin: 10px auto;
+  width:80%;
+}
+
+.work-item-thumb label{
+  padding:15px;
+  text-align: center;
+  color: var(--sec-color);
+  font-weight: 600;
+}
+.work-item-thumb .i{
+  position: absolute;
+  top:10px;
+  right:10px;
+  height:50px !important  ;
+  color: var(--body-text-color);
+}
+
+.work-item-thumb .lucide{
+    /* height:0px !important  ; */
+    color: rgb(212, 212, 212);
+}
+
+
+.work-item-thumb {
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 0;
+}
+.work-item-thumb:hover {
+  transform: scale(1.05);
+}
+
+/* Hide modal image groups */
+.modal-images {
+  display: none;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.modal-image-container img {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 8px;
+}
+
+.modal-caption {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 12px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  color: #f1c40f;
+}
 
 
 .css-selector {

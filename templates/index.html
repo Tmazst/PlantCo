@@ -65,6 +65,7 @@
     </div>
     <p>Formerly known as Emfuleni Lifestyle, we have grown into a destination where nature and community meet. Our vibrant Plant Shop and Nursery are filled with diverse greenery, while our cozy Café invites you to relax and reconnect with the tranquility of nature.</p>
     <!-- <h1>Our Services</h1> -->
+     <div class="buttons-cont gen-flex"><button class="btns">Contact US</button><button class="btns-outline">Restuarant Orders</button></div>
   </div>
   <div id="service-1" class="services gen-flex">
     <div class="service-content gen-flex-col">
@@ -162,7 +163,9 @@
     <div class="service-content gen-flex-col">
       <div class="serv-title name"><i class="fa-solid fa-trowel"></i> Landscaping, Land Rehabilitation, and Erosion Control</div>
       <p>We are shaping beautiful spaces while restoring the earth and building sustainable environments that thrive.</p>
+      <div class="buttons-cont gen-flex"><button class="btns-outline">Request Quote</button></div>
     </div>
+
 
     <div class="landscaping-img-cont">
       <a href="https://www.freepik.com/free-photo/beautiful-landscapes-iceland-while-travelling_18992979.htm#fromView=keyword&page=2&position=46&uuid=a09ef95b-0c08-4402-8659-3755dc4de7eb&query=Land+Rehabilitation">Image by freepik</a>
@@ -171,11 +174,78 @@
     <img class="bg-image" src="static/images/beautiful-landscapes-iceland-while-travelling.jpg" />
   </div>
 
-  <div class="portfolio gen-flex-col">
-    <h1>Our Previous Work</h1>
+  <!-- Portfolio Section -->
+<div class="portfolio-container gen-flex-col">
+  <h1>Portfolio</h1>
+  <div class="portfolio-description">
+    Explore our portfolio showcasing the beauty and diversity of our projects,
+    from lush landscapes to vibrant plant arrangements.
+  </div><br>
+
+  <!-- Project 1 -->
+   <div class="portfolio-items gen-flex">
+      <div class="work-group gen-flex">
+        <div class="work-item-thumb gen-flex-col" data-group="group1">
+          <img src="static/images/500784851_122114290964854511_4983170973627242192_n.jpg" alt="Portfolio Image 1" />
+          <h2>Project Title 1</h2>
+          <label>Description of the project highlighting its unique features and impact.</label>
+          <div class="i"><i data-lucide="images"></i></div> 
+        </div>
+
+        <!-- Hidden images for modal -->
+        <div class="portfolio-images modal-images" data-group="group1">
+          <div class="portfolio-image gen-flex-col">
+            <img src="static/images/500784851_122114290964854511_4983170973627242192_n.jpg" alt="Portfolio Image 1" />
+            <div class="portfolio-caption">Caption 1</div>
+          </div>
+          <div class="portfolio-image">
+            <img src="static/images/495248695_122106388412854511_3543073993007548854_n.jpg" alt="Portfolio Image 2" />
+            <div class="portfolio-caption">Caption 2</div>
+          </div>
+          <div class="portfolio-image">
+            <img src="static/images/500881911_122114290292854511_8675030628005047577_n.jpg" alt="Portfolio Image 3" />
+            <div class="portfolio-caption">Caption 3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="work-group gen-flex-col">
+        <div class="work-item-thumb gen-flex-col" data-group="group2">
+          <img src="static/images/520763798_122126754242854511_1475534057620236262_n.jpg" alt="Portfolio Image 2" />
+          <h2>Project Title 2</h2>
+          <label>Description of the project highlighting its unique features and impact.</label>
+          <div class="i"><i data-lucide="images"></i></div> 
+        </div>
+
+        <!-- Hidden images for modal -->
+        <div class="portfolio-images modal-images" data-group="group2">
+          <div class="portfolio-image">
+            <img src="static/images/500554353_122114290754854511_6132066303129268756_n.jpg" alt="Portfolio Image 2" />
+            <div class="portfolio-caption">Caption A</div>
+          </div>
+          <div class="portfolio-image">
+            <img src="static/images/500765103_122114290286854511_7596797710457330902_n.jpg" alt="Portfolio Image 4" />
+            <div class="portfolio-caption">Caption B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="portfolioModal" class="modal gen-flex-col">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <span class="arrow left">&#10094;</span>
+    <div class="modal-image-container"></div>
+    <span class="arrow right">&#10095;</span>
   </div>
+  <div class="modal-caption"></div>
+</div>
+
   
-  <div style="height:300px;background-color:aliceblue"></div>
+<div style="height:300px;background-color:aliceblue"></div>
 
 
 </div>
