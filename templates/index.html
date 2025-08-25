@@ -166,7 +166,6 @@
       <div class="buttons-cont gen-flex"><button class="btns-outline">Request Quote</button></div>
     </div>
 
-
     <div class="landscaping-img-cont">
       <a href="https://www.freepik.com/free-photo/beautiful-landscapes-iceland-while-travelling_18992979.htm#fromView=keyword&page=2&position=46&uuid=a09ef95b-0c08-4402-8659-3755dc4de7eb&query=Land+Rehabilitation">Image by freepik</a>
     </div>
@@ -176,7 +175,7 @@
 
   <!-- Portfolio Section -->
 <div class="portfolio-container gen-flex-col">
-  <h1>Portfolio</h1>
+  <h1><i class="fa-solid fa-briefcase"></i> Portfolio</h1>
   <div class="portfolio-description">
     Explore our portfolio showcasing the beauty and diversity of our projects,
     from lush landscapes to vibrant plant arrangements.
@@ -244,8 +243,62 @@
   <div class="modal-caption"></div>
 </div>
 
-  
-<div style="height:300px;background-color:aliceblue"></div>
+
+<!-- Contact Us Section -->
+<div class="contact-container gen-flex-col" id="contact-us-div">
+  <div id="contact-us" style="margin:60px auto; padding:20px;" class="border-spec">
+      <div class="flash-messages" class="btns">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                  {% for  category, message in messages %}
+                      <div class="flash-messages alert-{{category}}"> {{ message }}</div>
+                  {% endfor %}
+              {% endif %}
+          {% endwith %}
+      </div>
+      <h1 style="color:#00be63 !important;padding-left:5px"><i class="fa-solid fa-envelope-open-text"></i> Contact Plant Co, <br><span class="spans"> Today!</span></h1>
+      <div class="contact-form">
+          <form style="width:100%;" action = "{{url_for('contact_us')}}" method="post" >
+              {{contact_form.hidden_tag()}}
+              <div  style="width:100%;">
+                  {{contact_form.name(class="contact-form-control",placeholder="Name")}}
+              </div>
+              <div>
+                  {{contact_form.email(class="contact-form-control",placeholder="Email Address")}}
+              </div>
+              <div>
+                  {{contact_form.subject(class="contact-form-control",placeholder="Subject")}}
+              </div>
+              <div>
+                  {{contact_form.message(class="contact-form-control  text-area",placeholder="Message")}}
+              </div>
+              <div>
+                  {{contact_form.submit(class="btns")}}
+              </div>
+          </form>
+      </div>
+    </div>
+</div>
+<div style="height:300px;background-color:aliceblue">
+  <div id="partners" class="partners gen-flex-col">
+    <h1><i class="fa-solid fa-handshake"></i> Our Clients</h1>
+    <div class="slider-container">
+        <div class="partners-logos slider gen-flex">
+          <div class="partner-logo">
+            <img src="static/images/partner1.png" alt="Partner 1" />
+          </div>
+          <div class="partner-logo">
+            <img src="static/images/partner2.png" alt="Partner 2" />
+          </div>
+          <div class="partner-logo">
+            <img src="static/images/partner3.png" alt="Partner 3" />
+          </div>
+          <div class="partner-logo">
+            <img src="static/images/partner4.png" alt="Partner 4" />
+          </div>
+        </div>
+    </div>
+</div>
 
 
 </div>

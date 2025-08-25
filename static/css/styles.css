@@ -161,10 +161,30 @@ body{
     color: var(--body-text-color);
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 128, 128);
+    border-radius: 10px;
+    height: 20px !important;
+    
+}
+
+::-webkit-scrollbar {
+    /* margin-top:20px; */
+    width: 3px;
+    background: none;
+    border-radius: 10px;
+    height: 20px !important;
+ }
+
+#service-3 .service-content{
+  overflow-y: auto;
+  justify-content: flex-start ;
+}
+
 .services{
     width:100%;
     gap: 0 !important;
-    height:350px
+    min-height:350px
 }
 .service-content{
     width:50%;
@@ -519,7 +539,9 @@ button{
 }
 
 
-
+div{
+  box-sizing: border-box;
+}
 .portfolio-description{
   max-width: 700px;
   font-size: 1.5rem;
@@ -694,14 +716,96 @@ button{
     100%{background: linear-gradient(108deg, #19dfaa, #a4f0dc);}
 }
 
+.contact-form{
+    padding:20px;
+    margin:0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 
-@media all and (max-width: 900px) and (min-width: 576px){
+}
+
+.contact-container{
+    width:100%;
+    padding:20px;
+    background: var(--ascent-color);
+}
+
+#contact-us{
+  width:60%;
+  border-radius: 20px;
+  border:1px solid var(--pri-color);
+  background: rgba(248, 249, 250,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.contact-form-control{
+  background: rgba(248, 249, 250,0.6);
+  padding: 10px;
+  padding: 10px 15px;
+  margin-bottom: 0.8rem;
+  border:1px solid var(--pri-color);
+  border-radius:10px;
+  width:90% !important;
+}
+
+#partners i{
+  font-size: 2.5rem;
+  color:#6c757d
+}
+.fa-envelope-open-text{
+    color:#dbc501 !important;
+    font-size:2.5rem
+}
+.fa-briefcase{
+    color:#87682c !important;
+    font-size:2.5rem
+}
+/* Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 230px; /* Set height according to your image's aspect ratio */
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.slider {
+    display: flex;
+    position: absolute;
+    animation: slide 30s linear infinite; /* Adjust duration for speed */
+}
+.slider img {
+    height: 200px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between images */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(20%); /* Start off the right */
+    }
+    100% {
+        transform: translateX(-50%); /* End off the left (one full slide) */
+    }
+}
+
+
+@media all and (max-width: 900px) and (min-width: 701px){
 
    .name{
     font-weight:900;
     font-size:2rem;
     color:var(--grey-color)
 }
+#service-3 .service-title{
+    font-size:1.5rem
+}
+
+   .contact-form{
+        width:80% !important;
+    }
+
 }
 
 
